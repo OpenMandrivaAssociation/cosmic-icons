@@ -15,7 +15,7 @@ Requires:       pop-icon-theme
 These are the icons used by the COSMIC DE, created by System76
 
 %prep
-%autosetup -n %{name}-epoch-%{version}-alpha.1 -a1 -p1
+%autosetup -n %{name}-epoch-%{version}-alpha.1 -p1
 
 %build
 # nothing to build
