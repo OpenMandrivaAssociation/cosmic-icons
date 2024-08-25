@@ -18,7 +18,8 @@ These are the icons used by the COSMIC DE, created by System76
 %autosetup -n %{name}-epoch-%{version}-alpha.1 -a1 -p1
 
 %build
-just build-release
+# nothing to build
+#just build-release
 
 %install
 just rootdir=%{buildroot} prefix=%{_prefix} install
