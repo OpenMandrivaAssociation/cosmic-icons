@@ -1,11 +1,12 @@
 Name:           cosmic-icons
 Version:        1.0.0
-Release:        0.alpha5.1
+%define beta alpha.6
+Release:        %{?beta:0.%{beta}.}1
 Summary:        System76 Cosmic icon theme for Linux
 License:        CC-BY-SA-4.0 AND GPL-3.0-only
 Group:          Icons/Cosmic
 URL:            https://github.com/pop-os/cosmic-icons
-Source0:        https://github.com/pop-os/cosmic-applibrary/archive/epoch-%{version}-alpha.5.1/%{name}-epoch-%{version}-alpha.5.1.tar.gz
+Source0:        https://github.com/pop-os/cosmic-icons/archive/epoch-%{version}%{?beta:-%{beta}}/%{name}-epoch-%{version}%{?beta:-%{beta}}.tar.gz
 BuildRequires:  just
 BuildRequires:  zstd
 BuildArch:      noarch
@@ -15,7 +16,7 @@ Requires:       pop-icon-theme
 These are the icons used by the COSMIC DE, created by System76
 
 %prep
-%autosetup -n %{name}-epoch-%{version}-alpha.5.1 -p1
+%autosetup -n %{name}-epoch-%{version}%{?beta:-%{beta}} -p1
 
 %build
 # nothing to build
