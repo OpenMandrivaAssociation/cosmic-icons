@@ -1,5 +1,5 @@
 Name:           cosmic-icons
-Version:        1.5.0
+Version:        1.7.0
 #define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        System76 Cosmic icon theme for Linux
